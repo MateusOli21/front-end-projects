@@ -63,7 +63,7 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    color: var(--black-color);
-    background: var(--yellow-base-color);
+    /* color: var(--black-color); */
+    background: var(--red-dark-color);
   }
 `;

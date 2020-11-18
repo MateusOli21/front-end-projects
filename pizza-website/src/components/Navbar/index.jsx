@@ -2,11 +2,11 @@ import React from "react";
 
 import { Container, NavLink, NavIcon, Bars } from "./styles";
 
-const Navbar = () => {
+const Navbar = ({ isOpen, toggleIsOpen }) => {
   return (
     <Container>
       <NavLink to="/">Pizzas</NavLink>
-      <NavIcon>
+      <NavIcon onClick={toggleIsOpen}>
         <p>Menu</p>
         <Bars />
       </NavIcon>

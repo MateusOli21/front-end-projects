@@ -22,5 +22,6 @@ body {
   --yellow-base-color: #e9ba23;
   --yellow-light-color : #ffc500;
   --red-base-color: #e31837;
+  --red-dark-color: #bf0d25;
 }
 `;
