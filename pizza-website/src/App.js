@@ -1,11 +1,16 @@
+import { BrowserRouter } from "react-router-dom";
+import Hero from "./components/Hero";
+
 import { GlobalStyles } from "./style/GlobalStyles";
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyles />
-      <h1>Hello world</h1>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <GlobalStyles />
+        <Hero />
+      </div>
+    </BrowserRouter>
   );
 }
 

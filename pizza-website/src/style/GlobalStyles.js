@@ -8,11 +8,19 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 *, input, button{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 
 body {
-  font-family: -apple-system, Roboto, Ubuntu, 'Open Sans', sans-serif;
+  font-family: -apple-system, Kanit, Ubuntu, 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+:root{
+  --white-color: #fff;
+  --black-color: #000;
+  --yellow-base-color: #e9ba23;
+  --yellow-light-color : #ffc500;
+  --red-base-color: #e31837;
 }
 `;
