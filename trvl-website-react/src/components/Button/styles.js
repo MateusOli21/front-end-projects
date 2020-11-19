@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-  padding: ${({ btnSize }) => (btnSize === "large" ? "12px 26px" : "6px 18px")};
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border-radius: 4px;
   outline: none;
+  font-size: 18px;
+  padding: ${({ btnSize }) => (btnSize === "large" ? "12px 26px" : "6px 18px")};
+
   background: ${({ btnStyle }) =>
     btnStyle === "secondary" ? "transparent" : "var(--white-color)"};
   color: ${({ btnStyle }) =>
@@ -16,5 +21,10 @@ export const Container = styled.button`
   &:hover {
     background: var(--white-color);
     color: var(--black-color);
+  }
+
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    font-size: 16px;
   }
 `;

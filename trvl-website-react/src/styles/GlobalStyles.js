@@ -19,5 +19,7 @@ body {
 :root{
   --white-color: #fff;
   --black-color: #242424;
+  --dark-blue-color: #252e48;
+  --light-blue-color: #1f98f4;
 }
 `;
