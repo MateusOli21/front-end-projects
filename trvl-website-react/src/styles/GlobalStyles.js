@@ -18,6 +18,6 @@ body {
 
 :root{
   --white-color: #fff;
-  --black-color: #000;
+  --black-color: #242424;
 }
 `;

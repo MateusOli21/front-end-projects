@@ -1,11 +1,16 @@
 import GlobalStyles from "./styles/GlobalStyles";
+import { BrowserRouter } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyles />
-      <h1>Initial commit</h1>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <GlobalStyles />
+        <Navbar />
+      </div>
+    </BrowserRouter>
   );
 }
 
