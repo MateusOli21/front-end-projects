@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding: 4rem 0 2rem 0;
+  padding: 4rem 2rem 2rem;
   background: var(--black-color);
 `;
 
