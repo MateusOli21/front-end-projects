@@ -1,5 +1,3 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import { IconContext } from "react-icons"
 import { FaBars, FaTimes } from "react-icons/fa"
@@ -32,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <IconContext.Provider value={{ color: "#141414" }}>
-        <Nav active={scroll} isClicked={isBarsMenuClicked}>
+        <Nav isScrolled={scroll} isClicked={isBarsMenuClicked}>
           <Container>
             <Logo to="/">
               <Icon />

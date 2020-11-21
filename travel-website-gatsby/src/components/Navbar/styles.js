@@ -10,15 +10,16 @@ export const Nav = styled.div`
   position: sticky;
   top: 0;
   z-index: 999;
-  transition: all 0.8s ease-out;
+  transition: 0.8s all ease-in-out;
 
-  background: ${({ active }) =>
-    active
+  background: ${({ isScrolled }) =>
+    isScrolled
       ? "var(--white-color)"
-      : "linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)"};
+      : "linear-gradient(to bottom,  rgba(255,255,255, 0.7) 0%,rgba(255,255,255,0) 100%)"};
 
   @media screen and (max-width: 960px) {
-    background: ${({ active }) => (active ? "#fff" : "transparent")};
+    background: ${({ isScrolled }) =>
+      isScrolled ? "var(--white-color)" : "transparent"};
   }
 `
 
@@ -28,23 +29,27 @@ export const Container = styled.div`
   height: 80px;
   display: flex;
   justify-content: space-between;
+  background: transparent;
   align-items: center;
-  padding: 0 16px;
   z-index: 1;
 `
 
 export const Logo = styled(Link)`
   display: flex;
   align-items: center;
-  cursor: pointer;
   text-decoration: none;
   color: var(--black-color);
   font-size: 1.5rem;
+  cursor: pointer;
 
   span {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 16px;
   }
 `
 
@@ -53,6 +58,8 @@ export const Icon = styled(DiScala)`
 `
 
 export const MobileIcon = styled.div`
+  margin-right: 16px;
+
   @media screen and (min-width: 760px) {
     display: none;
   }
@@ -69,7 +76,8 @@ export const NavMenu = styled.div`
   position: absolute;
   top: ${({ isClicked }) => (isClicked ? "100%" : "-1000px")};
 
-  background: var(--white-color);
+  background: ${({ isClicked }) =>
+    isClicked ? "var(--white-color)" : "transparent"};
   opacity: 1;
   transition: all 0.3s ease;
 

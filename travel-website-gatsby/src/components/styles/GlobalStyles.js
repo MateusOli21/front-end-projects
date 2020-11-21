@@ -19,7 +19,8 @@ body {
 :root{
     --white-color: #fff;
     --black-color: #141414;
-    --g: red;
+    --red-color: #ff4040;
+    --red-darker-color: #d82d2d;
 }
 
 `
