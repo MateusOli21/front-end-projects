@@ -75,22 +75,24 @@ export const PageLink = styled(Link)`
 
 export const SignButton = styled.button`
   padding: 0.8rem 1.4rem;
-  border: none;
+  border: 1px solid var(--salmon-color);
+  margin-left: 1rem;
   border-radius: 0.4rem;
   font-weight: 700;
   color: var(--white-color);
-  background: var(--salmon-color);
+  background: transparent;
   cursor: pointer;
   transition: all 0.3s ease-out;
-  margin-left: 1rem;
 
   &:hover {
-    background: var(--orange-color);
+    background: var(--salmon-color);
   }
 
   @media screen and (max-width: 760px) {
     width: 100%;
     max-width: 240px;
     margin: 1.8rem 0;
+
+    background: var(--salmon-color);
   }
 `;

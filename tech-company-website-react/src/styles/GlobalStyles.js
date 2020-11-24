@@ -22,6 +22,9 @@ export default createGlobalStyle`
     --red-color: #ff0844;
     --salmon-color: #ffb199;
     --orange-color: #ff7062;
+    --orange-darker-color: #d85347;
+    --purple-color: #b721ff;
+    --cyan-color: #21d4fd;
 }
 
 

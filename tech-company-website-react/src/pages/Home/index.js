@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "../../components/Hero";
 
 import { Layout } from "../../components/_layout";
 
@@ -8,7 +9,7 @@ const Home = () => {
   return (
     <Layout>
       <Container>
-        <h1>Home</h1>
+        <Hero />
       </Container>
     </Layout>
   );
