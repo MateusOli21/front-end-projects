@@ -1,5 +1,7 @@
 import React from "react";
+
 import Hero from "../../components/Hero";
+import Services from "../../components/Services";
 
 import { Layout } from "../../components/_layout";
 
@@ -10,6 +12,7 @@ const Home = () => {
     <Layout>
       <Container>
         <Hero />
+        <Services />
       </Container>
     </Layout>
   );
