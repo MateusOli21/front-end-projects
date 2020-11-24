@@ -10,6 +10,7 @@ export const Container = styled.div`
   padding: 0 2.6rem;
   position: sticky;
   top: 0;
+  z-index: 10;
 `;
 
 export const LogoContainer = styled(Link)`

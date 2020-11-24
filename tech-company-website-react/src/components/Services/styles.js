@@ -24,16 +24,20 @@ export const CardsContainer = styled.div`
 `;
 
 export const Card = styled.div`
+  width: 100%;
+  max-width: 280px;
   position: relative;
   margin: 2rem 0;
   object-fit: cover;
-  background-size: cover;
-  width: 100%;
-  max-width: 280px;
-  object-fit: cover;
+  transition: all 0.3s ease-out;
 
   img {
+    border-radius: 0.4rem;
     width: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.075);
   }
 
   @media screen and (min-width: 840px) {
@@ -51,7 +55,6 @@ export const CardContent = styled.div`
   position: absolute;
   left: 1.6rem;
   bottom: 2rem;
-  z-index: 2;
 
   width: calc(100% - 2.6rem);
   text-align: center;
