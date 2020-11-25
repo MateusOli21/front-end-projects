@@ -1,16 +1,16 @@
 import React from "react";
 
-import homeBg from "../../assets/images/img-1.jpg";
+import designBg from "../../assets/images/img-1.jpg";
 
 import Layout from "../../components/_layout";
 import Hero from "../../components/Hero";
 
-const Home = () => {
+const Design = () => {
   return (
     <Layout>
-      <Hero imageBg={homeBg} title="Home" />
+      <Hero imageBg={designBg} title="Design" />
     </Layout>
   );
 };
 
-export default Home;
+export default Design;

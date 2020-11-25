@@ -6,10 +6,10 @@ const Dropdown = () => {
   return (
     <Container>
       <Item>
-        <PageLink>Marketing</PageLink>
+        <PageLink to="/marketing">Marketing</PageLink>
       </Item>
       <Item>
-        <PageLink>Design</PageLink>
+        <PageLink to="/design">Design</PageLink>
       </Item>
     </Container>
   );
