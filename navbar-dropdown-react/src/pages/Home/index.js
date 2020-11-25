@@ -1,14 +1,14 @@
 import React from "react";
-import Layout from "../../components/_layout";
 
-import { Container } from "./styles";
+import homeBg from "../../assets/images/img-1.jpg";
+
+import Layout from "../../components/_layout";
+import Hero from "../../components/Hero";
 
 const Home = () => {
   return (
     <Layout>
-      <Container>
-        <h1>Home</h1>
-      </Container>
+      <Hero imageBg={homeBg} title="Home page" />
     </Layout>
   );
 };
