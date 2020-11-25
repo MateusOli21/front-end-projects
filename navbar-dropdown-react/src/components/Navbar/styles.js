@@ -48,17 +48,22 @@ export const Menu = styled.ul`
 `;
 
 export const Item = styled.li`
-  margin: 18px 0;
-  transition: all 0.2s ease-out;
-  padding: 10px 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border-bottom: 2px solid var(--black-color);
-  text-align: center;
+
+  transition: all 0.2s ease-out;
+  cursor: pointer;
 
   &:hover {
     border-bottom: 2px solid var(--white-color);
   }
 
   @media screen and (min-width: 760px) {
+    height: 90px;
     margin: 0 18px;
   }
 `;
@@ -67,5 +72,4 @@ export const PageLink = styled(Link)`
   text-decoration: none;
   font-weight: 700;
   color: var(--white-color);
-  cursor: pointer;
 `;

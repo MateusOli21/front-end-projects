@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+import Dropdown from "../Dropdown";
+
 import { Container, Item, Logo, Menu, MobileIcons, PageLink } from "./styles";
 
 const Navbar = () => {
   const [isMenuClicked, setMenuClicked] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => setMenuClicked(!isMenuClicked);
+
+  const toggleOpenDropdown = () => setDropdownOpen(true);
+
+  const toggleCloseDropdown = () => setDropdownOpen(false);
 
   return (
     <Container>
@@ -18,8 +25,12 @@ const Navbar = () => {
         <Item>
           <PageLink to="/">Home</PageLink>
         </Item>
-        <Item>
+        <Item
+          onMouseEnter={toggleOpenDropdown}
+          onMouseLeave={toggleCloseDropdown}
+        >
           <PageLink to="/services">Serviços</PageLink>
+          {isDropdownOpen && <Dropdown />}
         </Item>
         <Item>
           <PageLink to="/products">Produtos</PageLink>

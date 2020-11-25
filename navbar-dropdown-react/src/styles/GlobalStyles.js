@@ -20,6 +20,7 @@ body {
     --white-color: #fff;
     --black-color: #131313;
     --orange-color: #ff7062;
+    --gray-color: #e0e0e0;
 }
 
 `;
