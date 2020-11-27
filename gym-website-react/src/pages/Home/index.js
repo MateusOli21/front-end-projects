@@ -1,10 +1,11 @@
 import React from "react";
 
+import heroBg from "../../assets/images/gym-1.jpg";
+
 import Hero from "../../components/Hero";
 import Navbar from "../../components/Navbar";
 import ServicesSection from "../../components/ServicesSection";
-
-import heroBg from "../../assets/images/gym-1.jpg";
+import PlansSection from "../../components/PlansSection";
 
 import { Container } from "./styles";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Navbar />
       <Hero heroBg={heroBg} />
       <ServicesSection />
+      <PlansSection />
     </Container>
   );
 };
