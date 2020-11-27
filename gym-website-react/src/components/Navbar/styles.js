@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Logo = styled.h1`
   color: var(--white-color);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   cursor: pointer;
 `;
 
