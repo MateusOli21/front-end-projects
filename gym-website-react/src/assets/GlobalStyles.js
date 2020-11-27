@@ -19,8 +19,8 @@ export default createGlobalStyle`
 
     --black-color: #131313;
     --white-color: #fff;
-    --red-color: #ff0844;
-    --red-darker-color: #c90633;
+    --red-color: #ff144b;
+    --red-darker-color: #db0d3d;
 }
 
 
