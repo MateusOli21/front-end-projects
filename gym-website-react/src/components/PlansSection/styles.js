@@ -14,13 +14,13 @@ export const Title = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.2rem;
   text-align: center;
 
   color: var(--white-color);
 
   h1 {
-    font-size: 3.6rem;
+    font-size: 4.8rem;
     margin-bottom: 1rem;
   }
 

@@ -46,5 +46,5 @@ export const Item = styled.li`
 export const Image = styled.img`
   width: 100%;
   max-width: 44rem;
-  border-radius: 0.4rem;
+  border-radius: 0.8rem;
 `;
