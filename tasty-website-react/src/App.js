@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
 import ScrollTopButton from "./components/ScrollTopButton";
+import ServicesSection from "./components/ServicesSection";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(light);
@@ -23,6 +24,7 @@ function App() {
         <Navbar toggleCurrentTheme={toggleCurrentTheme} />
         <Hero />
         <AboutSection />
+        <ServicesSection />
         <ScrollTopButton />
       </Theme>
     </>
