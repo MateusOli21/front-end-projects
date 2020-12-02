@@ -8,7 +8,6 @@ export const Container = styled.section`
   background: ${({ theme }) => theme.colors.containerColor};
 
   @media screen and (min-width: 760px) {
-    border: 1px solid red;
     padding: 8rem 3.2em;
 
     flex-direction: row;
