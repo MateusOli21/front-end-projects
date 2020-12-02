@@ -7,6 +7,7 @@ import light from "./assets/styles/themes/light";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import AboutSection from "./components/AboutSection";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(light);
@@ -20,6 +21,7 @@ function App() {
         <GlobalStyles />
         <Navbar toggleCurrentTheme={toggleCurrentTheme} />
         <Hero />
+        <AboutSection />
       </Theme>
     </>
   );

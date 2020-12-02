@@ -18,11 +18,13 @@ export const Container = styled.section`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 760px) {
     width: 100%;
     max-width: 66rem;
     justify-content: center;
+    align-items: flex-start;
   }
 `;
 
