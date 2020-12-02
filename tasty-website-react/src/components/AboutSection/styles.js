@@ -4,10 +4,12 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 3.6rem 2rem;
+  background: ${({ theme }) => theme.colors.containerColor};
 
   @media screen and (min-width: 760px) {
-    padding: 4rem 3.2em;
+    border: 1px solid red;
+    padding: 8rem 3.2em;
 
     flex-direction: row;
     justify-content: center;

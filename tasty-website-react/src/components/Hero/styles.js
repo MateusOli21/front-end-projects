@@ -7,6 +7,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background: ${({ theme }) => theme.colors.containerColor};
 
   @media screen and (min-width: 760px) {
     padding: 0 3.2em;

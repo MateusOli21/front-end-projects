@@ -8,6 +8,7 @@ import light from "./assets/styles/themes/light";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
+import ScrollTopButton from "./components/ScrollTopButton";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(light);
@@ -22,6 +23,7 @@ function App() {
         <Navbar toggleCurrentTheme={toggleCurrentTheme} />
         <Hero />
         <AboutSection />
+        <ScrollTopButton />
       </Theme>
     </>
   );
