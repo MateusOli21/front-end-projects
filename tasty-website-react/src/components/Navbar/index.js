@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FiMoon, FiSun } from "react-icons/fi";
 
 import {
   Container,
@@ -9,16 +10,20 @@ import {
   Nav,
   NavMenu,
   Item,
+  ThemeSwitcher,
 } from "./styles";
 
-const Navbar = () => {
+const Navbar = ({ toggleCurrentTheme }) => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [toggledTheme, setToggleTheme] = useState(false);
 
   const handleWindowScroll = () =>
     window.scrollY >= 80 ? setScroll(true) : setScroll(false);
 
   const handleToggleMenu = () => setActiveMenu(!activeMenu);
+
+  const handleToggleThemeIcon = () => setToggleTheme(!toggledTheme);
 
   useEffect(() => {
     handleWindowScroll();
@@ -41,6 +46,16 @@ const Navbar = () => {
             <Item>Serviços</Item>
             <Item>Menu</Item>
             <Item>Contato</Item>
+            <Item>
+              <ThemeSwitcher
+                onClick={() => {
+                  toggleCurrentTheme();
+                  handleToggleThemeIcon();
+                }}
+              >
+                {toggledTheme ? <FiSun /> : <FiMoon />}
+              </ThemeSwitcher>
+            </Item>
           </NavMenu>
         </Nav>
       </Content>
