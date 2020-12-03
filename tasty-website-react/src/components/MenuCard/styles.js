@@ -65,8 +65,14 @@ export const CartButton = styled.div`
     border: none;
     border-radius: 0.8rem 0;
     padding: 1.4rem 1.6rem;
+    cursor: pointer;
 
-    background: ${({ theme }) => theme.colors.primaryColor};
     color: ${({ theme }) => theme.colors.whiteColor};
+    background: ${({ theme }) => theme.colors.primaryColor};
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.primaryAltColor};
+    }
   }
 `;

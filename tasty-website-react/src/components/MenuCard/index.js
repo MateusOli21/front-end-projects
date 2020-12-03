@@ -28,7 +28,7 @@ const MenuCard = ({ plate }) => {
         </Plate>
         <CartButton>
           <button>
-            <BiCart />
+            <BiCart size={20} />
           </button>
         </CartButton>
       </Content>
