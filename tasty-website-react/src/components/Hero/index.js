@@ -15,7 +15,9 @@ const Hero = () => {
         </Texts>
         <Button>Veja o menu</Button>
       </Content>
-      <Image src={homeImg} alt="plate" />
+      <Image>
+        <img src={homeImg} alt="plate" />
+      </Image>
     </Container>
   );
 };

@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
 import ScrollTopButton from "./components/ScrollTopButton";
 import ServicesSection from "./components/ServicesSection";
+import MenuSection from "./components/MenuSection";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(light);
@@ -25,6 +26,7 @@ function App() {
         <Hero />
         <AboutSection />
         <ServicesSection />
+        <MenuSection />
         <ScrollTopButton />
       </Theme>
     </>

@@ -19,20 +19,21 @@ export const Title = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes.bigger};
   color: ${({ theme }) => theme.colors.titleColor};
   text-align: center;
+  padding-bottom: 1.8rem;
 
   @media screen and (min-width: 768px) {
     font-size: ${({ theme }) => theme.fontSizes.h5};
   }
 `;
 
-export const Items = styled.div`
-  /* margin: 2.6rem 0 4rem; */
+export const MenuContainer = styled.div`
+  margin: 3.6rem 0 4rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 860px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

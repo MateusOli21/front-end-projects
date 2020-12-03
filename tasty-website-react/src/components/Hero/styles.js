@@ -13,6 +13,7 @@ export const Container = styled.section`
     padding: 0 3.2em;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -23,7 +24,7 @@ export const Content = styled.div`
 
   @media screen and (min-width: 760px) {
     width: 100%;
-    max-width: 66rem;
+    max-width: 52rem;
     justify-content: center;
     align-items: flex-start;
   }
@@ -61,15 +62,21 @@ export const Texts = styled.div`
   }
 `;
 
-export const Image = styled.img`
-  width: 100%;
-  max-height: 32rem;
+export const Image = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @media screen and (min-width: 840px) {
-    max-height: 42rem;
-  }
+  img {
+    width: 100%;
+    max-width: 32rem;
 
-  @media screen and (min-width: 1024px) {
-    max-height: 50rem;
+    @media screen and (min-width: 840px) {
+      max-width: 36rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      max-width: 38rem;
+    }
   }
 `;
