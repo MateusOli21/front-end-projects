@@ -12,6 +12,7 @@ import ScrollTopButton from "./components/ScrollTopButton";
 import ServicesSection from "./components/ServicesSection";
 import MenuSection from "./components/MenuSection";
 import AppSection from "./components/AppSection";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(light);
@@ -29,6 +30,7 @@ function App() {
         <ServicesSection />
         <MenuSection />
         <AppSection />
+        <ContactSection />
         <ScrollTopButton />
       </Theme>
     </>
