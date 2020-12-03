@@ -5,7 +5,7 @@ import { Container, Content, SectionTitle, Title, Description } from "./styles";
 
 const ContactSection = () => {
   return (
-    <Container>
+    <Container id="contact-section">
       <Content>
         <SectionTitle>Contato</SectionTitle>
         <Title>Vamos conversar</Title>

@@ -16,7 +16,7 @@ import {
 
 const AppSection = () => {
   return (
-    <Container>
+    <Container id="app-section">
       <Content>
         <SectionTitle>App</SectionTitle>
         <Title>Baixe o nosso app</Title>

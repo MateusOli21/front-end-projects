@@ -14,7 +14,7 @@ import {
 
 const AboutSection = () => {
   return (
-    <Container>
+    <Container id="about-section">
       <Content>
         <SectionTitle>Sobre nós</SectionTitle>
         <Title>Nós cozinhamos a melhor comida</Title>

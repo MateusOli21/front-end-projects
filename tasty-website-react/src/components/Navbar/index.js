@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FiMoon, FiSun } from "react-icons/fi";
 
+import scrollToSection from "../../utils/scrollToSection";
+
 import {
   Container,
   Content,
@@ -41,11 +43,16 @@ const Navbar = ({ toggleCurrentTheme }) => {
 
         <Nav isActive={activeMenu}>
           <NavMenu>
-            <Item>Home</Item>
-            <Item>Sobre</Item>
-            <Item>Serviços</Item>
-            <Item>Menu</Item>
-            <Item>Contato</Item>
+            <Item onClick={() => scrollToSection("#hero-section")}>Home</Item>
+            <Item onClick={() => scrollToSection("#about-section")}>Sobre</Item>
+            <Item onClick={() => scrollToSection("#services-section")}>
+              Serviços
+            </Item>
+            <Item onClick={() => scrollToSection("#menu-section")}>Menu</Item>
+            <Item onClick={() => scrollToSection("#app-section")}>App</Item>
+            <Item onClick={() => scrollToSection("#contact-section")}>
+              Contato
+            </Item>
             <Item>
               <ThemeSwitcher
                 onClick={() => {

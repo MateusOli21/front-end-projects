@@ -7,7 +7,7 @@ import { Container, Content, Subtitle, Texts, Title, Image } from "./styles";
 
 const Hero = () => {
   return (
-    <Container>
+    <Container id="hero-section">
       <Content>
         <Texts>
           <Title>Tasty </Title>

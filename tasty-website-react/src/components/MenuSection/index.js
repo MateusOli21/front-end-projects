@@ -7,7 +7,7 @@ import { Container, SectionTitle, Title, MenuContainer } from "./styles";
 
 const MenuSection = () => {
   return (
-    <Container>
+    <Container id="menu-section">
       <SectionTitle>Menu</SectionTitle>
       <Title>O menu da semana</Title>
       <MenuContainer>
