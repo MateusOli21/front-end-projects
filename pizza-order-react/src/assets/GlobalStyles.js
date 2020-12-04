@@ -16,14 +16,20 @@ ul{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 :root{
     font-size: 60%;
 
-    --h1-size: 4.8rem;
-    --h2-size: 3.2rem;
+    --h1-size: 3.2rem;
     --normal-size: 1.6rem;
-    --larger-size: 2rem;
-    --bigger-size: 2.4rem;
+    --larger-size: 2.2rem;
+    --bigger-size: 2.8rem;
+
+    --normal-weight: 400;
+    --bold-weight: 700;
 
     --primary-color: #EA4C4C;
     --primary-alt-color: #C14545;

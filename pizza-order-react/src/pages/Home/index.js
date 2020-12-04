@@ -1,11 +1,23 @@
 import React from "react";
-import { Container } from "./styles";
+
+import pizzaBg from "../../assets/images/pizza-2.jpg";
+
+import Layout from "../_layout";
+
+import { Container, Title, Button, Content } from "./styles";
 
 const Home = () => {
   return (
-    <Container>
-      <h1>Home</h1>
-    </Container>
+    <Layout>
+      <Container bgImage={pizzaBg}>
+        <Content>
+          <Title>
+            Monte a sua própria pizza com as nossas diversas opções.
+          </Title>
+          <Button to="/base">Faça seu pedido</Button>
+        </Content>
+      </Container>
+    </Layout>
   );
 };
 
