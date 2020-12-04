@@ -2,7 +2,7 @@
 
 Um website criado para uma academia fictícia, desenvolvido com React JS.
 
-Veja o projeto: [Link para o site](https://travel-website-react.netlify.app)
+Veja o projeto: [Link para o site](https://gym-website-react.netlify.app)
 
 ### Tecnologias
 
