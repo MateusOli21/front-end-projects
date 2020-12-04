@@ -37,4 +37,6 @@ export const Option = styled.li`
   }
 `;
 
-export const ButtonContainer = styled.div``;
+export const ButtonContainer = styled.div`
+  display: flex;
+`;

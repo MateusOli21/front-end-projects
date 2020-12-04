@@ -1,9 +1,13 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { Container, PageLink } from "./styles";
 
-const Button = ({ children, path }) => {
-  return <Container to={path}>{children}</Container>;
+const Button = ({ children, path, variants }) => {
+  return (
+    <Container variants={variants} initial="hidden" animate="visible">
+      <PageLink to={path}>{children}</PageLink>
+    </Container>
+  );
 };
 
 export default Button;

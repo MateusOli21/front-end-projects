@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   width: 100%;
   max-width: 48rem;
 
@@ -9,7 +10,7 @@ export const Content = styled.div`
   align-items: center;
 `;
 
-export const Title = styled.h1`
+export const Title = styled(motion.h1)`
   font-size: var(--bigger-size);
   text-align: center;
   color: var(--white-color);
