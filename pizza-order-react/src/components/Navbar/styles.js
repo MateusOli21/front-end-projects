@@ -5,6 +5,7 @@ export const Container = styled.nav`
   height: 8rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   padding: 0 3rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -30,4 +31,11 @@ export const LogoTitle = styled(Link)`
   color: var(--primary-color);
   font-size: var(--normal-size);
   font-weight: var(--bold-weight);
+`;
+
+export const HomeLink = styled(Link)`
+  color: var(--secondary-color);
+  font-size: var(--normal-size);
+  font-weight: var(--bold-weight);
+  cursor: pointer;
 `;

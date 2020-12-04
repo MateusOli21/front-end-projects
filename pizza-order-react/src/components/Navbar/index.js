@@ -1,7 +1,7 @@
 import React from "react";
 import { FaPizzaSlice } from "react-icons/fa";
 
-import { Container, Logo, LogoTitle } from "./styles";
+import { Container, HomeLink, Logo, LogoTitle } from "./styles";
 
 const Navbar = () => {
   return (
@@ -10,6 +10,7 @@ const Navbar = () => {
         <FaPizzaSlice size={22} />
         <LogoTitle to="/">PizzaOrder</LogoTitle>
       </Logo>
+      <HomeLink to="/">Home</HomeLink>
     </Container>
   );
 };
