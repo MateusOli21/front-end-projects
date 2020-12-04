@@ -25,7 +25,7 @@ a{
 
     --h1-size: 3.2rem;
     --normal-size: 1.6rem;
-    --larger-size: 2.2rem;
+    --larger-size: 2rem;
     --bigger-size: 2.8rem;
 
     --normal-weight: 400;
