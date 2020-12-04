@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.section`
   height: calc(100vh - 9rem);
@@ -17,7 +18,7 @@ export const Container = styled.section`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +63,7 @@ export const Texts = styled.div`
   }
 `;
 
-export const Image = styled.div`
+export const Image = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
