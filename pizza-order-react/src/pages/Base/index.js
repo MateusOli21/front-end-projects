@@ -24,7 +24,12 @@ const Base = () => {
 
   return (
     <Layout>
-      <Content variants={pageMoveX} initial="hidden" animate="visible">
+      <Content
+        variants={pageMoveX}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
         <Title>Escolha a massa desejada</Title>
         <OptionsContainer>
           {bases.map((base, index) => (

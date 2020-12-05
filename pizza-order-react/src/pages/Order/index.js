@@ -20,7 +20,12 @@ const Order = () => {
 
   return (
     <Layout>
-      <Content variants={pageMoveX} initial="hidden" animate="visible">
+      <Content
+        variants={pageMoveX}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
         <Title>Agradecemos pelo seu pedido!</Title>
         <Description variants={moveYTitle}>
           Você pediu uma pizza {pizza.base.toLowerCase()} com:
