@@ -39,5 +39,7 @@ export const Option = styled(motion.li)`
 `;
 
 export const ButtonContainer = styled.div`
+  height: 2.2rem;
   display: flex;
+  align-items: center;
 `;

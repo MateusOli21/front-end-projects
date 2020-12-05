@@ -1,4 +1,8 @@
 import React from "react";
+import moveXNegButton from "../../assets/animations/moveXNegButton";
+
+import moveYTitle from "../../assets/animations/moveYTitle";
+import pageMoveX from "../../assets/animations/pageMoveX";
 
 import { useContextValue } from "../../Context";
 import Layout from "../_layout";
@@ -14,18 +18,18 @@ import {
 const Order = () => {
   const { pizza } = useContextValue();
 
-  console.log(pizza);
-
   return (
     <Layout>
-      <Content>
+      <Content variants={pageMoveX} initial="hidden" animate="visible">
         <Title>Agradecemos pelo seu pedido!</Title>
-        <Description>
+        <Description variants={moveYTitle}>
           Você pediu uma pizza {pizza.base.toLowerCase()} com:
         </Description>
         <ToppingsContainer>
           {pizza.toppings.map((topping, index) => (
-            <Topping key={index}>{topping}</Topping>
+            <Topping key={index} variants={moveXNegButton}>
+              {topping}
+            </Topping>
           ))}
         </ToppingsContainer>
       </Content>

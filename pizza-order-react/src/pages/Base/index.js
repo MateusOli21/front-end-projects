@@ -7,6 +7,7 @@ import Button from "../../components/Button";
 import pageMoveX from "../../assets/animations/pageMoveX";
 import moveXButton from "../../assets/animations/moveXButton";
 import whileHoverOption from "../../assets/animations/whileHoverOption";
+import moveXOption from "../../assets/animations/moveXOption";
 
 import {
   Content,
@@ -29,6 +30,7 @@ const Base = () => {
           {bases.map((base, index) => (
             <Option
               key={index}
+              variants={moveXOption}
               whileHover={whileHoverOption}
               className={pizza.base === base && "active"}
               onClick={() => addBase(base)}

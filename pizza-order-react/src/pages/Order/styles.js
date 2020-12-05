@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +24,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Description = styled.p`
+export const Description = styled(motion.p)`
   font-size: var(--normal-size);
   color: var(--white-color);
   text-align: center;
@@ -40,7 +41,7 @@ export const ToppingsContainer = styled.ul`
   margin: 1rem 0;
 `;
 
-export const Topping = styled.li`
+export const Topping = styled(motion.li)`
   font-size: var(--normal-size);
   color: var(--white-color);
   text-transform: capitalize;
