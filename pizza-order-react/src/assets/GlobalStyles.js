@@ -12,6 +12,10 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
 }
 
+body{
+    overflow: hidden;
+}
+
 ul{
     list-style: none;
 }

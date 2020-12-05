@@ -4,6 +4,10 @@ import { useContextValue } from "../../Context";
 import Layout from "../_layout";
 import Button from "../../components/Button";
 
+import pageMoveX from "../../assets/animations/pageMoveX";
+import moveXButton from "../../assets/animations/moveXButton";
+import whileHoverOption from "../../assets/animations/whileHoverOption";
+
 import {
   Content,
   Title,
@@ -19,24 +23,27 @@ const Base = () => {
 
   return (
     <Layout>
-      <Content>
+      <Content variants={pageMoveX} initial="hidden" animate="visible">
         <Title>Escolha a massa desejada</Title>
         <OptionsContainer>
           {bases.map((base, index) => (
             <Option
-              className={pizza.base === base && "active"}
               key={index}
+              whileHover={whileHoverOption}
+              className={pizza.base === base && "active"}
               onClick={() => addBase(base)}
             >
               {base}
             </Option>
           ))}
         </OptionsContainer>
-        {pizza.base && (
-          <ButtonContainer>
-            <Button path="/toppings">Próximo</Button>
-          </ButtonContainer>
-        )}
+        <ButtonContainer>
+          {pizza.base && (
+            <Button path="/toppings" variants={moveXButton}>
+              Próximo
+            </Button>
+          )}
+        </ButtonContainer>
       </Content>
     </Layout>
   );

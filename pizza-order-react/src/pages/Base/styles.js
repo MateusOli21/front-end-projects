@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +21,7 @@ export const OptionsContainer = styled.ul`
   margin: 2.8rem 0;
 `;
 
-export const Option = styled.li`
+export const Option = styled(motion.li)`
   font-size: var(--larger-size);
   color: var(--white-color);
   margin-bottom: 1.6rem;
