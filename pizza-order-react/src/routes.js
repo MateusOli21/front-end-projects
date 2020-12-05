@@ -9,7 +9,7 @@ import Toppings from "./pages/Toppings";
 const Routes = () => {
   const location = useLocation();
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.key}>
         <Route exact path="/" component={Home} />
         <Route path="/base" component={Base} />

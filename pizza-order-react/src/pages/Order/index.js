@@ -1,8 +1,10 @@
-import React from "react";
+import { AnimatePresence } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import moveXNegButton from "../../assets/animations/moveXNegButton";
 
 import moveYTitle from "../../assets/animations/moveYTitle";
 import pageMoveX from "../../assets/animations/pageMoveX";
+import Modal from "../../components/Modal";
 
 import { useContextValue } from "../../Context";
 import Layout from "../_layout";
@@ -16,7 +18,16 @@ import {
 } from "./styles";
 
 const Order = () => {
+  const [showModal, setShowModal] = useState(false);
   const { pizza } = useContextValue();
+
+  useEffect(() => {
+    function openModal() {
+      setTimeout(() => setShowModal(true), 5500);
+    }
+
+    openModal();
+  }, []);
 
   return (
     <Layout>
@@ -38,6 +49,11 @@ const Order = () => {
           ))}
         </ToppingsContainer>
       </Content>
+      {showModal && (
+        <AnimatePresence exitBeforeEnter>
+          <Modal setShowModal={setShowModal} />
+        </AnimatePresence>
+      )}
     </Layout>
   );
 };
