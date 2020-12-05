@@ -17,7 +17,6 @@ O projeto foi desenvolvido com React JS e tem o propósito de aprendizado da bib
 ### Desktop
 
 <div align="center">
-\
 
 ![desktop version](./src/assets/videos/pizza-order-react.gif)
 
@@ -28,7 +27,6 @@ O projeto foi desenvolvido com React JS e tem o propósito de aprendizado da bib
 ### Mobile
 
 <div align="center">
-\
 
 ![desktop version](./src/assets/videos/pizza-order-react-mbl.gif)
 
