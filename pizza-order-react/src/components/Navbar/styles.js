@@ -21,10 +21,9 @@ export const Logo = styled.div`
 
   color: var(--primary-color);
   cursor: pointer;
-
-  h1 {
-  }
 `;
+
+export const Nav = styled.nav``;
 
 export const LogoTitle = styled(Link)`
   margin-left: 0.8rem;

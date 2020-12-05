@@ -20,8 +20,29 @@ function DataProvider({ children }) {
     setPizza({ ...pizza, toppings: newToppings });
   }
 
+  function resetBase() {
+    setPizza({ ...pizza, base: "" });
+  }
+
+  function resetToppings() {
+    setPizza({ ...pizza, toppings: [] });
+  }
+
+  const resetPizza = () => {
+    setPizza({ ...pizza, base: "", toppings: [] });
+  };
+
   return (
-    <Context.Provider value={{ pizza, addBase, addTopping }}>
+    <Context.Provider
+      value={{
+        pizza,
+        addBase,
+        addTopping,
+        resetBase,
+        resetToppings,
+        resetPizza,
+      }}
+    >
       {children}
     </Context.Provider>
   );
