@@ -26,7 +26,7 @@ a{
     --black-color: #131313;
     --white-color: #fff;
     --primary-color: #04c273;
-    --primay-alt-color: #01a35f;
+    --primary-alt-color: #01a35f;
     --secondary-color: #151d30;
     --secondary-alt-color: #101624;
 
