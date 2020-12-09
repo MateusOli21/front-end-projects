@@ -6,6 +6,7 @@ import AboutSection from "../../components/AboutSection";
 import DiscoverSection from "../../components/DiscoverSection";
 import ServicesSection from "../../components/ServicesSection";
 import AccountSection from "../../components/AccountSection";
+import FooterSection from "../../components/FooterSection";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <DiscoverSection />
       <ServicesSection />
       <AccountSection />
+      <FooterSection />
     </>
   );
 };
