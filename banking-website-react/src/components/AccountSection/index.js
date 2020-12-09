@@ -22,7 +22,9 @@ const AccountSection = () => {
             Crie a sua conta de forma rápida e prática. Você só precisa do seu
             e-mail e dos seus dados.
           </SubHeadline>
-          <Button bigger>Criar conta</Button>
+          <Button bigger secondary>
+            Criar conta
+          </Button>
         </ContentContainer>
 
         <Image source={AccountImage} alt="business" invertOrder="true" />

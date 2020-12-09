@@ -22,7 +22,9 @@ const AboutSection = () => {
             Tenha acesso ao nosso app e faça transferências ilimitadas para
             qualquer banco sem taxa de cobrança.
           </SubHeadline>
-          <Button bigger>Comece agora</Button>
+          <Button bigger secondary>
+            Comece agora
+          </Button>
         </ContentContainer>
 
         <Image source={aboutImage} alt="business" invertOrder="true" />

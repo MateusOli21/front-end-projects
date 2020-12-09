@@ -22,7 +22,9 @@ const DiscoverSection = () => {
             Acesse a sua conta de qualquer lugar e a qualquer hora. Você só
             precisa de um conexão com internet e seu celular ou computador.
           </SubHeadline>
-          <Button bigger>Saiba mais</Button>
+          <Button bigger secondary>
+            Saiba mais
+          </Button>
         </ContentContainer>
 
         <Image source={savingsImage} alt="business" />
