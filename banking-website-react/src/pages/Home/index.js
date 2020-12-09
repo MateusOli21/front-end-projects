@@ -1,13 +1,15 @@
 import React from "react";
 
 import Navbar from "../../components/Navbar";
-import Hero from "../../components/Hero";
+import HeroSection from "../../components/HeroSection";
+import AboutSection from "../../components/AboutSection";
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <Hero />
+      <HeroSection />
+      <AboutSection />
     </>
   );
 };

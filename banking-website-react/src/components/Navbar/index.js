@@ -29,12 +29,14 @@ const Navbar = () => {
           <NavItem onClick={() => scrollToSection("hero-section")}>
             Home
           </NavItem>
-          <NavItem>Descubra</NavItem>
+          <NavItem onClick={() => scrollToSection("about-section")}>
+            Sobre
+          </NavItem>
           <NavItem>Serviços</NavItem>
           <NavItem>Criar conta</NavItem>
           {showMenu && (
             <NavItem className="sign-in">
-              <Button>Entrar</Button>
+              <Button bigger>Entrar</Button>
             </NavItem>
           )}
         </NavItems>
