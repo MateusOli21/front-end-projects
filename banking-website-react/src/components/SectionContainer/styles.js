@@ -9,6 +9,6 @@ export const Container = styled.div`
     altBg ? "var(--black-color)" : "var(--white-color)"};
 
   @media screen and (min-width: 760px) {
-    height: calc(100vh - 9rem);
+    height: 100vh;
   }
 `;
