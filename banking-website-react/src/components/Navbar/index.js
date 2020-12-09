@@ -32,6 +32,9 @@ const Navbar = () => {
           <NavItem onClick={() => scrollToSection("about-section")}>
             Sobre
           </NavItem>
+          <NavItem onClick={() => scrollToSection("discover-section")}>
+            Descubra
+          </NavItem>
           <NavItem>Serviços</NavItem>
           <NavItem>Criar conta</NavItem>
           {showMenu && (

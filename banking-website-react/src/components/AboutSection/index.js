@@ -7,9 +7,9 @@ import Headline from "../Headline";
 import SubHeadline from "../SubHeadline";
 import Button from "../Button";
 import Image from "../Image";
+import SectionTitle from "../SectionTitle";
 
 import aboutImage from "../../assets/images/business.svg";
-import SectionTitle from "../SectionTitle";
 
 const AboutSection = () => {
   return (
@@ -20,7 +20,7 @@ const AboutSection = () => {
           <Headline>Transferências ilimitadas e com taxa zero</Headline>
           <SubHeadline>
             Tenha acesso ao nosso app e faça transferências ilimitadas para
-            qualquer banco sem taxa de cobrança
+            qualquer banco sem taxa de cobrança.
           </SubHeadline>
           <Button bigger>Comece agora</Button>
         </ContentContainer>
