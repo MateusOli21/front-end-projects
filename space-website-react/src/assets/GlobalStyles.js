@@ -12,9 +12,6 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
 }
 
-body{
-    overflow: hidden;
-}
 
 ul{
     list-style: none;
@@ -36,12 +33,13 @@ a{
     --normal-weight: 400;
     --bold-weight: 700;
 
-    --primary-color: #16A63E;
-    --primary-alt-color: #0e8e30;
-    --secondary-color: #d62020;
-    --secondary-alt-color: #bc1414;
+    --primary-color: #d62020;
+    --primary-alt-color: #bc1414;
+    --secondary-color: #16A63E;
+    --secondary-alt-color: #0e8e30;
     --white-color: #fff;
-    --black-color: #131313;
+    --black-color: #161616;
+    --gray-color: #4C4C4C;
 }
 
 @media screen and (min-width: 700px){
