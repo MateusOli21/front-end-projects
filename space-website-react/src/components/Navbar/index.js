@@ -19,8 +19,8 @@ const Navbar = () => {
 
       <Nav isActive={navActive}>
         <ul>
-          <li onClick={() => scrollToSection("#navbar-container")}>Home</li>
-          <li>Explore</li>
+          <li onClick={() => scrollToSection("#hero-section")}>Home</li>
+          <li onClick={() => scrollToSection("#explore-section")}>Explore</li>
           <li>Sobre</li>
         </ul>
       </Nav>
