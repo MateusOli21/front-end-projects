@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <Nav isActive={navActive}>
         <ul>
-          <li>Home</li>
+          <li onClick={() => scrollToSection("#navbar-container")}>Home</li>
           <li>Explore</li>
           <li>Sobre</li>
         </ul>

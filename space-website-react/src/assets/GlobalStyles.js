@@ -24,11 +24,12 @@ a{
 :root{
     font-size: 60%;
 
-    --h1-size: 4.4rem;
-    --h2-size: 3.2rem;
+    --h1-size: 4.8rem;
+    --h2-size: 3.6rem;
+    --h3-size: 2.8rem;
     --normal-size: 1.6rem;
-    --larger-size: 2rem;
-    --bigger-size: 2.8rem;
+    --larger-size: 1.8rem;
+    --bigger-size: 2.2rem;
 
     --normal-weight: 400;
     --bold-weight: 700;
